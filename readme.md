@@ -47,6 +47,7 @@ For more information 👉 [documentation](https://docs.cypress.io/app/get-starte
 | Active Community and Support | Large, active community with many tutorials and resources, making it easier to learn and troubleshoot. | Limited support for mobile and multi-tab testing, which can restrict testing scope in some projects. |
 
 # Code
+## [Link](https://github.com/RouthKiranBabu/testReddit/blob/day_1/CypressAutomation/cypress/e2e/Login.cy.js)
 ```JavaScript
 describe('Tests', () => {
     it('1. Login', () => {
@@ -56,4 +57,3 @@ describe('Tests', () => {
     });
 });
 ```
-[Link](https://github.com/RouthKiranBabu/testReddit/blob/day_1/CypressAutomation/cypress/e2e/Login.cy.js)
