@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "63de36ad-637b-4133-b3e8-ac918f7aefcf",
+		"name": "ConstructiveWeek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39529557"
+	},
+	"item": [
+		{
+			"name": "getAllData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Testing Status Code\r",
+							"pm.test(\"Status Code is 200.\", () => {\r",
+							"    pm.response.to.have.status(200)\r",
+							"})\r",
+							"pm.test(\"Got Status Code from [200, 201].\", () => {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201])\r",
+							"})\r",
+							"pm.test(\"Status code having OK string.\", () => {\r",
+							"    pm.response.to.have.status(\"OK\")\r",
+							"})\r",
+							"pm.test(\"Content-Type as header.\", () => {\r",
+							"    pm.response.to.have.header(\"Content-Type\")\r",
+							"})\r",
+							"pm.test(\"Is Content-Type == 'application/json'.\", () => {\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.eql(\"application/json\");\r",
+							"})\r",
+							"\r",
+							"// Testing Response time\r",
+							"pm.test(\"Response time Below 3 ms.\", () => {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3)\r",
+							"})\r",
+							"\r",
+							"// // Asserting value Types\r",
+							"// let jsonData = pm.response.json()\r",
+							"// pm.test(\"Is jsonData is Object.\", () => {\r",
+							"//     pm.expect(jsonData).to.be.an(\"object\")\r",
+							"// })\r",
+							"// pm.test(\"Is json id is number.\", () => {\r",
+							"//     pm.expect(jsonData.id).to.be.a(\"number\")\r",
+							"// })\r",
+							"// pm.test(\"Is json title is string.\", () => {\r",
+							"//     pm.expect(jsonData.Title).to.be.a(\"string\")\r",
+							"// })\r",
+							"// pm.test(\"Is json comments is List.\", () => {\r",
+							"//     pm.expect(jsonData.Comments).to.be.an(\"array\")\r",
+							"// })"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/contents"
+			},
+			"response": []
+		},
+		{
+			"name": "addData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"5\",\r\n        \"Title\": \"Dummy Title\",\r\n        \"Ups\": 123,\r\n        \"Downs\": 0,\r\n        \"Visited\": true,\r\n        \"Comments\": [\r\n            \"Other discussions:\\n\\nhttps://olympics.com/tokyo-2020/olympic-games/en/results/athletics/result-men-s-javelin-throw-fnl-000100-.htm\\n\\nhttps://www.reddit.com/r/india/comments/ozs3m5/neeraj_chopra_wins_gold_in_tokyo_2020_mens/\\n\\n\\nMedal Ceremony: \\nhttps://www.reddit.com/r/india/comments/ozsogp/here_you_go_neeraj_gold_cermony/\\n\\n\\n[Neeraj Chopras gold-winning throw! #Tokyo2020 Highlights](https://youtu.be/mo4X4Q4L3kU)\",\r\n            \"Congrats from Finland\\n\\nI hope you celebrate him accordingly, he did something incredible for your nation.\",\r\n            \"Thanks to him india has jumped whopping 20 places in medal tally\",\r\n            \"[deleted]\",\r\n            \"FIRST INDIAN TO WIN THE OLYMPICS GOLD IN ATHELETICS\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/contents"
+			},
+			"response": []
+		},
+		{
+			"name": "updataData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"5\",\r\n    \"Title\": \"Dummy new Title\",\r\n    \"Ups\": 123,\r\n    \"Downs\": 0,\r\n    \"Visited\": true,\r\n    \"Comments\": [\r\n        \"Other discussions:\\n\\nhttps://olympics.com/tokyo-2020/olympic-games/en/results/athletics/result-men-s-javelin-throw-fnl-000100-.htm\\n\\nhttps://www.reddit.com/r/india/comments/ozs3m5/neeraj_chopra_wins_gold_in_tokyo_2020_mens/\\n\\n\\nMedal Ceremony: \\nhttps://www.reddit.com/r/india/comments/ozsogp/here_you_go_neeraj_gold_cermony/\\n\\n\\n[Neeraj Chopras gold-winning throw! #Tokyo2020 Highlights](https://youtu.be/mo4X4Q4L3kU)\",\r\n        \"Congrats from Finland\\n\\nI hope you celebrate him accordingly, he did something incredible for your nation.\",\r\n        \"Thanks to him india has jumped whopping 20 places in medal tally\",\r\n        \"[deleted]\",\r\n        \"FIRST INDIAN TO WIN THE OLYMPICS GOLD IN ATHELETICS\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/contents/5"
+			},
+			"response": []
+		},
+		{
+			"name": "partialUpdateData",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Fifth Title\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/contents/5"
+			},
+			"response": []
+		},
+		{
+			"name": "removeData",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/contents/5"
+			},
+			"response": []
+		}
+	]
+}
