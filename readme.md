@@ -228,3 +228,7 @@ List and provide a brief overview of the technologies used in the project.
       - [x] `cy.log()`: in Cypress is used to output custom messages to the test runner’s command log, useful for debugging purposes.
       - [x] `cy.screenshot()`: command in Cypress captures a screenshot during tests, useful for debugging and visual test validation.
       - [x] `cy.wait()`: Cypress is used to pause test execution for a specified time or until an alias resolves, improving synchronization.
+
+# Documents
+ - [Bug Report and Test Cases](https://docs.google.com/spreadsheets/d/1Cg1Ftbdm5BAzvhUMKPx25mtn80VAMh1BObD_kd8SmKk/edit?gid=0#gid=0)
+ - [Test Plan](https://docs.google.com/document/d/1yVzkMey0GQRvlYiwK96oYT1rFIZJ7R1XjWGgxiRaYfE/edit?tab=t.0)
