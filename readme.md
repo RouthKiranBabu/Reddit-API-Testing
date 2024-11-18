@@ -60,6 +60,19 @@ Cypress is typically used for end-to-end testing, but it also supports integrati
   - `Scripting`: Use JavaScript for pre-request scripts and test scripts to add logic for request execution and response validation.
   - `Integration`: Supports integrations with CI/CD pipelines, version control systems, and other tools like Newman for command-line execution.
   - `Collaboration`: Enables teams to collaborate on API testing and documentation in real-time.
+#### Advantages and Disadvantages of using Postman
+| Advantages | Disadvantages |
+| :--- | :--- |
+| `User-Friendly Interface`: Easy to use, even for beginners. |	`Heavy Resource Usage`: Can consume significant system resources. |
+| `Supports Multiple HTTP Methods`: GET, POST, PUT, DELETE, etc., for comprehensive testing. |	`Limited Collaboration in Free Tier`: Advanced collaboration requires a paid plan. |
+| `Environment Variables`: Enables dynamic testing for multiple environments (e.g., dev, prod). |	`No Full IDE Integration`: Lacks direct integration with development environments. |
+| `Automation`: Collections and Newman CLI enable automated API testing. |	`Limited for Complex Workflows`: Handling intricate test flows can be challenging. |
+| `Scriptable Testing`: Pre-request and test scripts use JavaScript for advanced functionality. |	`Learning Curve for Scripting`: Requires knowledge of JavaScript for complex test cases. |
+| `Extensive Community and Documentation`: Offers robust support and learning resources. |	`Limited Load Testing`: Not designed for high-volume performance or stress testing. |
+| `Cross-Platform`: Available on Windows, macOS, and Linux. |	`Cloud Dependency`: Some features rely on Postman’s cloud, raising privacy concerns. |
+| `Built-in Response Validation`: Helps debug and validate API responses quickly. |	`Version Control`: Lacks built-in integration with Git; manual work is required. |
+| `Free Tier Availability`: Basic functionality is free, suitable for small teams. |	`Customization Limitations`: Limited ability to customize the UI or workflow. |
+| `Supports Multiple Formats`: Works with JSON, XML, HTML, and raw data. |	`Not Specialized for Backend Testing`: May not replace dedicated backend testing frameworks. |
 
 ## Design Decisions or Assumptions
   1. Made different folders for each Sections:
