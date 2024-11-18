@@ -222,8 +222,8 @@ List and provide a brief overview of the technologies used in the project.
       - [x] `cy.xpath()`: Finds elements on the page).
       - [x] `cy.contains()`: Finds an element containing specific text.
       - [x] `cy.click()`: Simulates a click on an element.
-      - [ ] `cy.type()`: Types text into an input field.
-      - [ ] `cy.url()`: Asserts the current URL.
+      - [x] `cy.type()`: Types text into an input field.
+      - [x] `cy.url()`: Asserts the current URL.
       - [x] `cy.should()`: Adds an assertion to verify that something should happen (e.g., an element is visible, contains text, etc.).
       - [x] `cy.log()`: in Cypress is used to output custom messages to the test runner’s command log, useful for debugging purposes.
       - [x] `cy.screenshot()`: command in Cypress captures a screenshot during tests, useful for debugging and visual test validation.
