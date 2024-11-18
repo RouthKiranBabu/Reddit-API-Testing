@@ -10,6 +10,11 @@
 |     `1`| `What is the scope of the project? Why did you choose the same?` | `To reduce the human effort while testing the website again and again in the future days.` |
 |     2| Can you walk me through the most challenging technical problem you encountered in your project and how you resolved it? | Yes, I have encountered a technical problem regarding understanding about the project So Team member given a some questions to answer. This given me a vision to approach project. |
 |     `3`| `What specific technologies did you use, and why did you choose them for this project?` | `Cypress for automation.` |
+|     4| Can you explain a situation where you had to make a critical decision that impacted the project's direction? | Yes, Checking the cypress automation commands to other websites, also improves the practice. |
+|     `5`| `How did you manage version control and collaboration in your project?` | If there's a chance of facing problems then choosing a team member is crucial, When the day is at the end then project is submitted to different branch in github. |
+|     6| What would you do differently if you were to start this project over again? | Taking this project as a reference as a learning stage and improving focus level. |
+|     `7`| Can you explain the architecture of your project? Why was it designed this way? | [Flow 1](https://github.com/RouthKiranBabu/testReddit/tree/day_2?tab=readme-ov-file#-flowchart) [Flow 2](https://github.com/RouthKiranBabu/testReddit/tree/day_4?tab=readme-ov-file#directory-structure) |
+
 
 </details>
 
