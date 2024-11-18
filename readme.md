@@ -37,6 +37,19 @@ graph TD;
 - `Headless Browser Testing`: Supports running tests without a graphical interface using headless browsers.
 - `Easy Setup`: Cypress doesn’t require complex setup or additional configurations. You just install the tool and can start writing tests.
 Cypress is typically used for end-to-end testing, but it also supports integration and unit testing. It is particularly popular for testing JavaScript-based applications, but it works well with other tech stacks too.
+#### Advantages and Disadvantages of Cypress
+| Advantages | Disadvantages |
+| :--- | :--- |
+| `Fast and Reliable Testing`: Executes tests directly in the browser, offering quick feedback. |	`Limited Browser Support`: Only supports Chromium-based browsers (e.g., Chrome, Edge) and Firefox. |
+| `Developer-Friendly`: Provides an intuitive syntax and debugging tools. |	`No Native Multi-Tab Support`: Testing across multiple tabs is complex. |
+| `Automatic Waiting`: Automatically waits for DOM elements to load and XHR requests to finish, reducing the need for explicit waits. |	Not Ideal for Unit Testing: Designed primarily for end-to-end (E2E) testing. |
+| `Real-Time Reloads`: Instantly reloads the browser when test files are updated. |	`Single Language`: Requires knowledge of JavaScript, limiting its use for teams using other languages. |
+| `Comprehensive Test Runner`: Offers a built-in dashboard for debugging and managing tests. |	`Resource-Intensive`: Can be heavy on CPU and memory for large test suites. |
+| `Built-In Assertions`: Comes with powerful, built-in assertions for testing. |	`No Cross-Browser Execution`: Doesn’t natively support testing on Safari or Internet Explorer. |
+| `Rich Ecosystem`: Supports plugins and integration with CI/CD tools for advanced workflows. |	`Limited Support for Mobile Testing`: Cannot run directly on mobile devices or simulators. |
+| `Time Travel Feature`: Takes snapshots during test execution, enabling detailed inspection of each step. |	`Steeper Learning Curve for Beginners`: Though developer-friendly, newcomers might take time to grasp advanced features. |
+| `Easy Mocking`: Simplifies mocking of server responses and network requests. |	`License Costs for Advanced Features`: The Cypress Dashboard Service has premium features that are not free. |
+| `Active Community`: Strong support and frequent updates from the Cypress team and community. |	`Requires Node.js`: Necessitates installing Node.js, which may add complexity for non-JavaScript teams. |
 
 ### Key Features of Postman
   - `User-Friendly Interface`: Allows users to easily construct and send HTTP requests (GET, POST, PUT, DELETE, etc.).
