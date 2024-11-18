@@ -1,0 +1,8 @@
+{
+    "url": "https://www.reddit.com/",
+    "screenShotName": "RedditFrontImage",
+    "clicklogin": "#login-button",
+    "continuexpath": "(//div[contains(text(), 'Continue as Routh')])[1]",
+
+    "search": ["google", "chatgpt"]
+}
