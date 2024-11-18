@@ -48,54 +48,150 @@ Cypress is typically used for end-to-end testing, but it also supports integrati
   - `Integration`: Supports integrations with CI/CD pipelines, version control systems, and other tools like Newman for command-line execution.
   - `Collaboration`: Enables teams to collaborate on API testing and documentation in real-time.
 
-## Design decisions or assumptions
-  1. 
+## Design Decisions or Assumptions
+  1. Made different folders for each Sections:
+     - `Cypress` - For Automation testing.
+     - `Praw Module in Python` - To get JSON data.
+     - `Postman API Testing` - For requests and response communication using JSON file.
 
 ## Installation & Getting started
   - [Cypress](https://www.cypress.io/)
   - [VS Code](https://code.visualstudio.com/)
+  - [Postman](https://www.postman.com/downloads/)
 
+### Commands
+#### To install JSON Server
 ```bash
-npm install my-project
-cd my-project
-npm start
+npm install -g json-server
 ```
+#### To run JSON Server
+```bash
+json-server jsonFile
+```
+#### Git Commands
+```bash
+1. How to connect the folder to the GitHub repository.
+cd EnterWorkingDirectory
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/RouthKiranBabu/testrepo.git
+https://github.com/RouthKiranBabu/testReddit.git
+git branch
+git branch day_1
+git checkout day_1
+git push -u origin day_1
+git push -u origin master
+git pull --rebase origin master
+git commit -m "First Commit"
+git push -u origin master
+git status
+git reflog
+// refresh the page
 
-## Usage
-Watch the Given Video Shows the procedure to Use the Project.
+cd "Project folder path"
+git status
+
+// to check what branch we are in
+git branch
+
+// to create a new branch
+git branch branchName
+
+// to check all the branch
+git branch
+
+// to move to the desired branch
+git checkout branchName
+git branch
+
+// to create a file
+touch login.java
+git status
+
+git add .
+git status
+git commit -m "branch demo"
+git status
+git push -u origin login
+
+// moving to the other branch also changes files and folders
+git checkout main
+
+git status
+
+// when you are in the main branch to merge
+// then whatever files and folder is present in the 
+git merge login
+
+git push -u origin main
+git branch -d login
+
+// to delete the branch
+git push origin --delete login
+
+Eg:
+cd OneDrive
+cd Desktop
+cd projectFolder
+git status
+git add .
+git commit -m "added Initial cypress look."
+git push -u origin day_1
+
+Eg:
+cd OneDrive
+cd Desktop
+cd projectFolder
+git branch day_2
+git checkout day_2
+git status
+git add .
+git status
+git commit -m "added Second days work."
+git push -u origin day_2
+
+```
 
 ## Credentials
 Provide user credentials for autheticated pages
 
 ## APIs Used
-None
+API made by json-server.
 
 ## API Endpoints
-None
+ - `Get`: http://localhost:3000/contents
+ - `Post`: http://localhost:3000/contents
+ - `Update`: http://localhost:3000/contents/5
+ - `Patch`: http://localhost:3000/contents/5
+ - `Delete`: http://localhost:3000/contents/5
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
-- Node.js
 - Cypress
-- Visual Studio
-- Sprint Tool Suite
-- Git Bash
-- Crome Browser
+  - Visual Studio Code
+  - Mocha
+  - Install Cypress
+- Postman
+  - Have enough knowledge on postman
+- Json data
+  - Praw module
+  - Python
 
 # 👉Code Section
   ## Aim
-  - Start doing Cypress Project as much as Possible
-  - Read Carefully the given documentation and do the Work
+  - Design, Implement and test the Reddit Social Media.
   ## Things Required
   - [Cypress](https://www.cypress.io/)
+  - [Postman](https://www.postman.com/downloads/)
   - [VS Code](https://code.visualstudio.com/)
   ## Procedure
   1. Next Day is the dead line need to complete as much as possible as per documentation.
   2. Set High and Low Priority Work.
   3. Do the High Priority Work first and then low priority.
   ## Theory
-  - Cypress Commands Used
+  - Cypress Commands:
       - [x] `cy.visit()`: Navigates to a URL.
       - [x] `cy.xpath()`: Finds elements on the page).
       - [x] `cy.contains()`: Finds an element containing specific text.
