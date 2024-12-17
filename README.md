@@ -1,3 +1,6 @@
+# Ending Certificate
+<img alt="Completion Certificate" src="./Certificate.jpg"> </img>
+
 # 👉 Given
 ## Links
 | Type | Document |
